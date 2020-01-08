@@ -23,6 +23,7 @@ class BaseValidate extends Validate
         }
         else
         {
+            echo "hello world";
             return true;
         }
     }
