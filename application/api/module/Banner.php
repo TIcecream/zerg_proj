@@ -8,6 +8,7 @@ class Banner
 {
     public static function getBannerByID($id)
     {
-        return "hello world";
+        // return "hello world";
+        return null;
     }
 }
