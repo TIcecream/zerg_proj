@@ -2,8 +2,10 @@
 
 namespace app\api\controller\v1;
 
+use app\api\model\Banner as ModelBanner;
 use app\api\validate\IDMustBePositiveInt;
 use app\api\validate\TestValidate;
+use app\lib\exception\BannerMissException;
 use think\Validate;
 
 class Banner
@@ -24,6 +26,12 @@ class Banner
         ];
 
         (new IDMustBePositiveInt())->goCheck();
+        // $banner = ModelBanner::getBannerByID($id);
+        // if(is_null($banner))
+        // {
+        //     throw new BannerMissException;
+        // }
+
 
         // // $validate = new Validate([
         // //     'name' => 'require|max:10',

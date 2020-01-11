@@ -1,0 +1,12 @@
+{
+    "BannerException":{
+        "code":404,
+        "msg":"请求Banner不存在",
+        "errorCode":10000
+    },
+    "ServerInnerException":{
+        "coce":500,
+        "msg":"不想让客户端知道的错误",
+        "errorCode":999
+    }
+}
